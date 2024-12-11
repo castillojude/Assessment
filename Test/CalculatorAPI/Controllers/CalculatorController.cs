@@ -42,7 +42,7 @@ namespace CalculatorAPI.Controllers
         {
             try
             {
-                return Ok(x * y);
+                return Ok(MathF.Round(x * y, 4));
             }
             
             catch(Exception ex){
@@ -56,7 +56,7 @@ namespace CalculatorAPI.Controllers
         {
            try
             {
-                return Ok(x / y);
+                return Ok(MathF.Round(x / y, 4));
             }
             
             catch(Exception ex){
