@@ -9,12 +9,12 @@ namespace CalculatorAPI.Controllers
     public class CalculatorController : ControllerBase
     {
         
-        [HttpGet("GetSum/{a}/{b}")]
-        public IActionResult GetSum(float a, float b)
+        [HttpGet("GetSum/{x}/{y}")]
+        public IActionResult GetSum(float x, float y)
         {
             try
             {
-                return Ok(a + b);
+                return Ok(x + y);
             }
             
             catch(Exception ex){
@@ -23,12 +23,12 @@ namespace CalculatorAPI.Controllers
             }
         }
 
-        [HttpGet("GetDifference/{a}/{b}")]
-        public IActionResult GetDifference(float a, float b)
+        [HttpGet("GetDifference/{x}/{y}")]
+        public IActionResult GetDifference(float x, float y)
         {
             try
             {
-                return Ok(a - b);
+                return Ok(x - y);
             }
             
             catch(Exception ex){
@@ -37,12 +37,12 @@ namespace CalculatorAPI.Controllers
             }
         }
 
-        [HttpGet("GetProduct/{a}/{b}")]
-        public IActionResult GetProduct(float a, float b)
+        [HttpGet("GetProduct/{x}/{y}")]
+        public IActionResult GetProduct(float x, float y)
         {
             try
             {
-                return Ok(a * b);
+                return Ok(x * y);
             }
             
             catch(Exception ex){
@@ -51,12 +51,12 @@ namespace CalculatorAPI.Controllers
             }
         }
 
-        [HttpGet("GetQuotient/{a}/{b}")]
-        public IActionResult GetQuotient(float a, float b)
+        [HttpGet("GetQuotient/{x}/{y}")]
+        public IActionResult GetQuotient(float x, float y)
         {
            try
             {
-                return Ok(a / b);
+                return Ok(x / y);
             }
             
             catch(Exception ex){
